@@ -6,7 +6,7 @@
 #    By: jaoh <jaoh@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/08 16:22:36 by jaoh              #+#    #+#              #
-#    Updated: 2026/10/11 14:46:34 by jaoh             ###   ########.fr        #
+#    Updated: 2026/10/13 14:49:37 by jaoh             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,6 @@ ft_tuple = ("Hello", "toto!")
 ft_set = {"Hello", "tutu!"}
 ft_dict = {"Hello" : "titi!"}
 
-#your code here
 ft_list[1] = "World!"
 ft_tuple = ("Hello", "France!")
 ft_set.add("Paris!")
