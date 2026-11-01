@@ -1,27 +1,15 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Loading.py                                         :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: jaoh <jaoh@student.42.fr>                  +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/10/11 15:22:43 by jaoh              #+#    #+#              #
-#    Updated: 2026/10/11 15:22:44 by jaoh             ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 import os
 import time
 
 
 def format_time(seconds: float) -> str:
-    """Format a duration in seconds as MM:SS."""
+    """Return seconds as MM:SS."""
     minutes, secs = divmod(int(seconds), 60)
     return f"{minutes:02d}:{secs:02d}"
 
 
 def ft_tqdm(lst: range) -> None:
-    """Yield items of lst while displaying a tqdm-like progress bar."""
+    """Yield the items of lst and draw a progress bar like tqdm."""
     total = len(lst)
     start = time.time()
     for i, elem in enumerate(lst, start=1):
